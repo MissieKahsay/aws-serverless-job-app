@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Your Resume</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Job Application Portal</h1>
+      <form id="uploadForm">
+        <label for="userId">User ID</label>
+        <input type="text" id="userId" placeholder="Enter your ID" required />
+
+        <label for="fileInput">Upload Resume (PDF)</label>
+        <input type="file" id="fileInput" accept=".pdf" required />
+
+        <button type="submit">Submit Application</button>
+      </form>
+
+      <p id="status"></p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
